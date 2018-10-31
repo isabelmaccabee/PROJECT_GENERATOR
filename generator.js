@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const curr_dir = process.cwd(); // WHERE THE USER IS ATM AND WHERE NEW FOLDER WILL BE
+const curr_dir = process.cwd();
 console.log(curr_dir);
 
 const createDirectoryContents = (templatePath, projectName) => {
@@ -13,6 +13,7 @@ const createDirectoryContents = (templatePath, projectName) => {
         if (stat.isFile()) {
           fs.readFile(originalFilePath, "utf8", (err, contents) => {
             const writePath = `${curr_dir}/${projectName}/${file}`;
+            if (file === '.npmignore') file = '.gitignore';
             fs.writeFile(writePath, contents, "utf8", err => {
               if (err) console.error("Failed oops: " + err);
               else console.log("You made a file!!!");
