@@ -4,11 +4,16 @@
   "description": "template",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./spec"
+    "test": "mocha ./spec",
+    "lint": "eslint ./"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "eslint": "^3.15.0"
+  }
 }

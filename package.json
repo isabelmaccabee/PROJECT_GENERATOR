@@ -15,6 +15,6 @@
     "inquirer": "^6.2.0"
   },
   "bin": {
-    "generate": "./generator.js"
+    "generate": "generator.js"
   }
 }
