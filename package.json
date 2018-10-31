@@ -1,0 +1,20 @@
+{
+  "name": "template_folder",
+  "version": "1.0.0",
+  "description": "template",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./spec",
+    "start": "node generator"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "inquirer": "^6.2.0"
+  },
+  "bin": {
+    "generate": "./generator.js"
+  }
+}
