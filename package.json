@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha ./spec",
-    "start": "node generator.js",
-    "bin": {
-      "generate" : "./generator.js"
-    }
+    "start": "node generator.js"
   },
   "keywords": [],
   "author": "",
