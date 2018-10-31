@@ -14,4 +14,4 @@ const questions = [
   }
 ];
 
-inquirer.prompt(question).then(answer => console.log(answers));
+inquirer.prompt(questions).then(answers => console.log(answers));
